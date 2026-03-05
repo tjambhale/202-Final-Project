@@ -1,0 +1,24 @@
+# JetBrains IDEs (DataGrip)
+.idea/
+*.iml
+dataSources/
+dataSources.local.xml
+dataSources.xml
+jdbc-drivers/
+
+# OS
+.DS_Store
+
+# Kaggle data (do not commit full datasets)
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+
+# DB dumps
+*.dump
+*.backup
+*.sql.gz
+
+# Misc
+.env
