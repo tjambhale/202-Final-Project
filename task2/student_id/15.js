@@ -1,7 +1,7 @@
 use("proj");
 
 db.resume_change_logs.find(
-  { student_key: "u_00015" },
+  { student_key: "u_0015" },
   {
     _id: 0,
     student_key: 1,
