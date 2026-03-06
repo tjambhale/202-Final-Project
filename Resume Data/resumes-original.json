@@ -1,0 +1,1827 @@
+{
+  "generated_at": "2026-03-06T19:37:00Z",
+  "count": 20,
+  "resumes": [
+    {
+      "student_key": "u_0001",
+      "timestamp": "2026-02-03T10:14:22Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.41,
+        "relevant_coursework": [
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "SQL joins, CTEs, window functions, schema design, and JSON querying."
+          },
+          {
+            "course": "Operating Systems",
+            "term": "Fall 2025",
+            "description": "Processes/threads, scheduling, memory management, and concurrency."
+          },
+          {
+            "course": "Software Engineering",
+            "term": "Winter 2026",
+            "description": "Testing, code reviews, requirements, and iterative delivery in teams."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Hackathon Finalist",
+            "term": "Winter 2026",
+            "description": "Built a small web app prototype and presented to judges."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "JavaScript", "Git/GitHub"],
+        "soft": ["Communication", "Teamwork"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Course Planner + Degree Audit Tool",
+            "role": "Full-Stack Developer",
+            "start_date": "2025-11-10",
+            "end_date": "2026-01-25",
+            "description": "Created a planner that checks prerequisites and suggests schedules based on target graduation date.",
+            "highlights": [
+              "Implemented prerequisite validation rules and conflict detection.",
+              "Built simple search and filters for course selection."
+            ],
+            "tools": ["JavaScript", "SQL", "PostgreSQL"]
+          },
+          {
+            "name": "Placement Insights Dashboard (Course Project)",
+            "role": "Data Analyst",
+            "start_date": "2026-01-18",
+            "end_date": "2026-03-02",
+            "description": "Modeled student profiles as JSON documents and computed comparable category scores to support bucketing and major-level insights.",
+            "highlights": [
+              "Created consistent JSON fields for academics, skills, and experience.",
+              "Used NTILE bucketing to label low/medium/high per score."
+            ],
+            "tools": ["PostgreSQL", "SQL", "DataGrip"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Library Student Assistant",
+            "title": "Desk Support",
+            "start_date": "2025-09-25",
+            "end_date": "2026-02-10",
+            "description": "Helped students with printing, account access, and basic troubleshooting.",
+            "highlights": [
+              "Documented common issues and steps for faster resolution.",
+              "Handled multiple requests while maintaining service quality."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "ACM @ UC Davis",
+            "role": "Member",
+            "start_date": "2025-10-05",
+            "end_date": "2026-02-28",
+            "description": "Attended weekly workshops and practiced interview-style problem solving."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0002",
+      "timestamp": "2026-01-29T16:40:05Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Statistics",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.74,
+        "relevant_coursework": [
+          {
+            "course": "Regression Analysis",
+            "term": "Fall 2025",
+            "description": "OLS, diagnostics, interactions, regularization, and model interpretation."
+          },
+          {
+            "course": "Probability Theory",
+            "term": "Winter 2026",
+            "description": "Random variables, distributions, CLT, and estimation."
+          },
+          {
+            "course": "Data Management",
+            "term": "Winter 2026",
+            "description": "Relational modeling, SQL analytics, and data cleaning workflows."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Dean’s List",
+            "term": "Fall 2025",
+            "description": "Recognized for strong academic performance over a full course load."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["R", "Python", "SQL (PostgreSQL)", "Excel/Sheets"],
+        "soft": ["Analytical Thinking", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Bike Demand Forecast Report",
+            "role": "Data Scientist",
+            "start_date": "2026-01-08",
+            "end_date": "2026-02-20",
+            "description": "Explored seasonal patterns and built baseline forecasting models using historical bike-share data.",
+            "highlights": [
+              "Compared multiple regression vs regularized approaches for stability.",
+              "Wrote a clear report explaining feature effects and limitations."
+            ],
+            "tools": ["R", "Python", "SQL"]
+          },
+          {
+            "name": "Survey Analysis Mini-Pipeline",
+            "role": "Data Engineer",
+            "start_date": "2025-10-15",
+            "end_date": "2025-12-05",
+            "description": "Cleaned messy survey exports and produced a reproducible analysis dataset.",
+            "highlights": [
+              "Created cleaning rules for missing/invalid values.",
+              "Generated summary tables for demographics and key outcomes."
+            ],
+            "tools": ["Python", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Department Tutor Center",
+            "title": "Peer Tutor (Stats)",
+            "start_date": "2025-09-30",
+            "end_date": "2026-02-28",
+            "description": "Tutored students in regression, probability, and hypothesis testing.",
+            "highlights": [
+              "Explained concepts with examples and checked understanding quickly.",
+              "Helped students debug homework calculations and code."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Data Science Club",
+            "role": "Workshop Attendee",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-25",
+            "description": "Participated in project nights and small group presentations."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0003",
+      "timestamp": "2026-02-11T08:33:41Z",
+      "college": {
+        "name": "San José State University",
+        "degree": "B.S.",
+        "major": "Software Engineering",
+        "graduation_date": "2026-05-20"
+      },
+      "academics": {
+        "cgpa": 3.18,
+        "relevant_coursework": [
+          {
+            "course": "Software Testing",
+            "term": "Fall 2025",
+            "description": "Unit tests, integration tests, mocking, and test-driven workflows."
+          },
+          {
+            "course": "Databases",
+            "term": "Fall 2025",
+            "description": "Normalization, relational design, transactions, and SQL queries."
+          },
+          {
+            "course": "Cloud Computing",
+            "term": "Winter 2026",
+            "description": "Deployments, CI/CD concepts, containers, and basic monitoring."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Project Showcase Award",
+            "term": "Fall 2025",
+            "description": "Recognized for a clean demo and strong documentation."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Java", "SQL (PostgreSQL)", "Docker", "Git/GitHub"],
+        "soft": ["Ownership", "Problem Solving"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Issue Tracker Web App",
+            "role": "Backend Developer",
+            "start_date": "2025-10-01",
+            "end_date": "2025-12-12",
+            "description": "Built REST endpoints for tickets, comments, and status workflows with basic role-based access control.",
+            "highlights": [
+              "Designed DB schema to support ticket history and comments.",
+              "Added request validation and meaningful error handling."
+            ],
+            "tools": ["Java", "PostgreSQL", "Docker"]
+          },
+          {
+            "name": "CI Pipeline Hardening",
+            "role": "DevOps Contributor",
+            "start_date": "2026-01-05",
+            "end_date": "2026-02-08",
+            "description": "Improved build automation and added checks to prevent accidental secrets exposure.",
+            "highlights": [
+              "Added lint/test steps and consistent environment configuration.",
+              "Documented deployment steps for teammates."
+            ],
+            "tools": ["GitHub Actions", "Docker"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Student Tech Center",
+            "title": "Lab Assistant",
+            "start_date": "2025-09-10",
+            "end_date": "2026-02-01",
+            "description": "Supported lab hardware and helped students set up development environments.",
+            "highlights": [
+              "Resolved setup issues across different OS configurations.",
+              "Created quick-start docs for common tooling."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Hack Club",
+            "role": "Participant",
+            "start_date": "2025-10-12",
+            "end_date": "2026-02-18",
+            "description": "Worked on small team projects and practiced shipping demos quickly."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0004",
+      "timestamp": "2026-02-22T19:05:13Z",
+      "college": {
+        "name": "UC Irvine",
+        "degree": "B.S.",
+        "major": "Data Science",
+        "graduation_date": "2026-06-12"
+      },
+      "academics": {
+        "cgpa": 3.88,
+        "relevant_coursework": [
+          {
+            "course": "Machine Learning",
+            "term": "Fall 2025",
+            "description": "Supervised learning, evaluation, feature engineering, and interpretability basics."
+          },
+          {
+            "course": "Information Retrieval",
+            "term": "Winter 2026",
+            "description": "Vector similarity, ranking, and text representation methods."
+          },
+          {
+            "course": "Data Wrangling",
+            "term": "Fall 2025",
+            "description": "Cleaning pipelines, joins, and reproducible transformation scripts."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Dean’s Honor Roll",
+            "term": "Fall 2025",
+            "description": "Top academic standing in the department."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "Pandas", "Git/GitHub"],
+        "soft": ["Presentation", "Analytical Thinking"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Resume Similarity Search Prototype",
+            "role": "NLP/IR Engineer",
+            "start_date": "2026-01-28",
+            "end_date": "2026-03-01",
+            "description": "Designed a structured resume-to-text representation to support vector similarity search and cohort comparisons.",
+            "highlights": [
+              "Built a consistent template to transform nested resume sections to text.",
+              "Outlined evaluation using top-k neighbor placement rates."
+            ],
+            "tools": ["Python", "vector similarity (concept)"]
+          },
+          {
+            "name": "Placement Factors Analysis",
+            "role": "Data Analyst",
+            "start_date": "2025-11-15",
+            "end_date": "2026-01-10",
+            "description": "Compared how skills vs academics vs experience correlate with placement outcomes by major groups.",
+            "highlights": [
+              "Computed category scores and bucketed using quantiles.",
+              "Summarized major-level differences for high vs low buckets."
+            ],
+            "tools": ["SQL", "PostgreSQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Research Lab",
+            "title": "Undergraduate Research Assistant",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-20",
+            "description": "Supported data collection and wrote scripts to clean datasets for analysis.",
+            "highlights": [
+              "Standardized inconsistent labels across multiple sources.",
+              "Created reusable scripts for repeated experiments."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Data Science Mentorship",
+            "role": "Mentor",
+            "start_date": "2025-11-01",
+            "end_date": "2026-02-15",
+            "description": "Helped newer students learn Python basics and project structure."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0005",
+      "timestamp": "2026-02-07T13:12:44Z",
+      "college": {
+        "name": "UC San Diego",
+        "degree": "B.S.",
+        "major": "Cognitive Science (HCI)",
+        "graduation_date": "2026-06-20"
+      },
+      "academics": {
+        "cgpa": 3.29,
+        "relevant_coursework": [
+          {
+            "course": "Information Visualization",
+            "term": "Fall 2025",
+            "description": "Design rationale, encodings, interaction techniques, and evaluation."
+          },
+          {
+            "course": "Human-Computer Interaction",
+            "term": "Winter 2026",
+            "description": "User research methods, prototyping, and usability testing."
+          },
+          {
+            "course": "Data Management",
+            "term": "Fall 2025",
+            "description": "Relational concepts, queries, and data preparation."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Team Project Recognition",
+            "term": "Winter 2026",
+            "description": "Recognized for strong coordination and clear final presentation."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["JavaScript", "SQL (PostgreSQL)", "Figma", "Git/GitHub"],
+        "soft": ["User Empathy", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Interactive Dashboard for Student Outcomes",
+            "role": "UX/Data Visualization Designer",
+            "start_date": "2025-11-20",
+            "end_date": "2026-02-14",
+            "description": "Designed a dashboard to explore placement factors and show bucket comparisons across categories.",
+            "highlights": [
+              "Created multiple views for overview + drill-down exploration.",
+              "Wrote concise explanations for how to read each visualization."
+            ],
+            "tools": ["JavaScript", "Figma"]
+          },
+          {
+            "name": "Resume Keyword Extractor",
+            "role": "Prototype Developer",
+            "start_date": "2026-01-10",
+            "end_date": "2026-01-31",
+            "description": "Built a basic script to extract repeated terms from project descriptions to support tailoring resumes.",
+            "highlights": [
+              "Grouped terms by project vs work descriptions.",
+              "Generated a simple summary report of frequent terms."
+            ],
+            "tools": ["Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Media Lab",
+            "title": "Design Assistant",
+            "start_date": "2025-09-20",
+            "end_date": "2026-02-05",
+            "description": "Helped build slides and prototypes for campus initiatives.",
+            "highlights": [
+              "Improved clarity of visuals and labeling for presentations.",
+              "Maintained version control for shared assets."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Design Club",
+            "role": "Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-25",
+            "description": "Participated in critiques and improved prototypes based on feedback."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0006",
+      "timestamp": "2026-02-16T09:58:12Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Mechanical Engineering",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.05,
+        "relevant_coursework": [
+          {
+            "course": "Numerical Methods",
+            "term": "Fall 2025",
+            "description": "Applied numerical techniques for solving engineering problems using code."
+          },
+          {
+            "course": "Engineering Design",
+            "term": "Winter 2026",
+            "description": "Team-based design, prototyping, and technical documentation."
+          },
+          {
+            "course": "Statistics for Engineers",
+            "term": "Fall 2025",
+            "description": "Regression, distributions, and experimental interpretation."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Design Expo Participant",
+            "term": "Winter 2026",
+            "description": "Presented a team prototype at a department expo."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "MATLAB", "SQL (PostgreSQL)", "Git/GitHub"],
+        "soft": ["Teamwork", "Organization"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Sensor Data Cleanup + Summary Report",
+            "role": "Data Analyst",
+            "start_date": "2025-10-12",
+            "end_date": "2025-12-01",
+            "description": "Cleaned and summarized sensor logs for a design project, producing weekly performance summaries.",
+            "highlights": [
+              "Defined cleaning rules for missing and duplicate readings.",
+              "Created summary tables for quick comparison across trials."
+            ],
+            "tools": ["Python"]
+          },
+          {
+            "name": "Parts Inventory Tracker",
+            "role": "Database Builder",
+            "start_date": "2026-01-05",
+            "end_date": "2026-02-12",
+            "description": "Built a small relational database to track parts, suppliers, and purchase history for a team project.",
+            "highlights": [
+              "Normalized entities and created basic constraints.",
+              "Wrote queries to find frequently used parts and reorder needs."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Machine Shop",
+            "title": "Student Assistant",
+            "start_date": "2025-09-18",
+            "end_date": "2026-01-28",
+            "description": "Assisted with safe equipment operation and project setup.",
+            "highlights": [
+              "Tracked tool usage logs and handled basic maintenance checks.",
+              "Helped coordinate scheduling for student projects."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Engineering Society",
+            "role": "Member",
+            "start_date": "2025-10-07",
+            "end_date": "2026-02-20",
+            "description": "Attended career panels and worked on small team challenges."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0007",
+      "timestamp": "2026-02-18T14:22:09Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.62,
+        "relevant_coursework": [
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "Relational modeling, SQL (joins, window functions), indexing, query optimization, and JSON handling."
+          },
+          {
+            "course": "Machine Learning",
+            "term": "Winter 2026",
+            "description": "Model evaluation, feature engineering, cross-validation, and deployment considerations."
+          },
+          {
+            "course": "Data Structures & Algorithms",
+            "term": "Spring 2025",
+            "description": "Implemented classic data structures and optimized algorithms for runtime and memory."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Dean’s List",
+            "term": "Fall 2025",
+            "description": "Recognized for strong academic performance over a full course load."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "MongoDB", "Git/GitHub"],
+        "soft": ["Communication", "Problem Solving"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Placement Insights Dashboard (Course Project)",
+            "role": "Data Engineer / Analyst",
+            "start_date": "2026-01-20",
+            "end_date": "2026-03-05",
+            "description": "Built a pipeline to convert multiple placement datasets into consistent JSON profiles, compute academic/skill/experience scores, and summarize which category most impacts placement by major.",
+            "highlights": [
+              "Created dataset-specific JSON schemas and standardized keys (student_key/source) for merging into a master collection.",
+              "Designed score formulas and used NTILE bucketing to assign low/medium/high categories.",
+              "Generated major-level summaries comparing placement rate differences between high vs low buckets."
+            ],
+            "tools": ["PostgreSQL", "SQL", "DataGrip", "GitHub"]
+          },
+          {
+            "name": "Resume Similarity Search Prototype",
+            "role": "ML/IR Prototype Builder",
+            "start_date": "2026-02-10",
+            "end_date": "2026-02-28",
+            "description": "Prototyped a vector-search workflow to find students most similar to a query resume and summarize common improvement opportunities.",
+            "highlights": [
+              "Defined a structured text representation of resumes for embedding.",
+              "Outlined filtering by major and aggregating success rates among nearest neighbors."
+            ],
+            "tools": ["Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus IT Helpdesk",
+            "title": "Student Support Technician",
+            "start_date": "2025-09-15",
+            "end_date": "2026-02-01",
+            "description": "Provided technical support and documented recurring issues; improved response workflow with lightweight automation.",
+            "highlights": [
+              "Wrote step-by-step troubleshooting guides used by new team members.",
+              "Organized issue categories to reduce repeated escalation."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Data Science Club",
+            "role": "Project Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-20",
+            "description": "Collaborated on small analysis projects and practiced presenting findings."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0008",
+      "timestamp": "2026-02-04T21:11:50Z",
+      "college": {
+        "name": "UCLA",
+        "degree": "B.S.",
+        "major": "Electrical Engineering",
+        "graduation_date": "2026-06-14"
+      },
+      "academics": {
+        "cgpa": 3.53,
+        "relevant_coursework": [
+          {
+            "course": "Signals and Systems",
+            "term": "Fall 2025",
+            "description": "Signal representations, transforms, and system analysis."
+          },
+          {
+            "course": "Embedded Systems",
+            "term": "Winter 2026",
+            "description": "Microcontroller programming and interfacing with sensors."
+          },
+          {
+            "course": "Data Structures",
+            "term": "Fall 2025",
+            "description": "Core structures and algorithmic tradeoffs for performance."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "IEEE Student Member",
+            "term": "Fall 2025",
+            "description": "Participated in technical talks and networking events."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["C/C++", "Python", "Git/GitHub", "SQL (PostgreSQL)"],
+        "soft": ["Attention to Detail", "Problem Solving"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Embedded Telemetry Logger",
+            "role": "Firmware Developer",
+            "start_date": "2025-10-20",
+            "end_date": "2025-12-15",
+            "description": "Built a microcontroller project to log sensor data and export it for analysis.",
+            "highlights": [
+              "Implemented robust logging and basic fault handling.",
+              "Exported logs into a structured format for analysis scripts."
+            ],
+            "tools": ["C/C++", "Python"]
+          },
+          {
+            "name": "Sensor Data QA Pipeline",
+            "role": "Data Processing Contributor",
+            "start_date": "2026-01-12",
+            "end_date": "2026-02-10",
+            "description": "Wrote scripts to validate and summarize sensor readings to support experiments.",
+            "highlights": [
+              "Flagged outliers and missing periods.",
+              "Generated summary tables and plots for weekly review."
+            ],
+            "tools": ["Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Engineering Student Lab",
+            "title": "Lab Assistant",
+            "start_date": "2025-09-22",
+            "end_date": "2026-02-12",
+            "description": "Helped set up lab experiments and maintained equipment checkout processes.",
+            "highlights": [
+              "Tracked checkouts and maintained consistent documentation.",
+              "Assisted students during peak lab hours."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Robotics Club",
+            "role": "Member",
+            "start_date": "2025-10-05",
+            "end_date": "2026-02-22",
+            "description": "Collaborated on small robotics challenges and shared progress demos."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0009",
+      "timestamp": "2026-02-26T11:47:03Z",
+      "college": {
+        "name": "UC Berkeley",
+        "degree": "B.A.",
+        "major": "Economics",
+        "graduation_date": "2026-05-18"
+      },
+      "academics": {
+        "cgpa": 3.67,
+        "relevant_coursework": [
+          {
+            "course": "Econometrics",
+            "term": "Fall 2025",
+            "description": "Regression modeling, causal interpretation, and inference."
+          },
+          {
+            "course": "Data Science for Social Good",
+            "term": "Winter 2026",
+            "description": "Applied data analysis with a focus on communication and policy context."
+          },
+          {
+            "course": "Database Concepts",
+            "term": "Fall 2025",
+            "description": "Relational modeling and SQL querying for analytics."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Research Poster Presenter",
+            "term": "Winter 2026",
+            "description": "Presented a short econometrics study with clear visuals."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "R", "SQL (PostgreSQL)", "Tableau"],
+        "soft": ["Writing", "Presentation"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Policy Impact Analysis (Class Project)",
+            "role": "Analyst",
+            "start_date": "2025-11-01",
+            "end_date": "2025-12-18",
+            "description": "Analyzed a public dataset and wrote a report connecting findings to policy questions.",
+            "highlights": [
+              "Produced regression results with clear interpretation.",
+              "Created charts and narrative explanations for non-technical readers."
+            ],
+            "tools": ["R", "Python"]
+          },
+          {
+            "name": "Data Cleaning + SQL Reporting",
+            "role": "Data Engineer",
+            "start_date": "2026-01-15",
+            "end_date": "2026-02-22",
+            "description": "Built a clean analysis table from messy inputs and generated weekly summary reports.",
+            "highlights": [
+              "Implemented deduplication and consistent type casting.",
+              "Created reusable SQL queries for metrics."
+            ],
+            "tools": ["SQL", "PostgreSQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Career Center",
+            "title": "Student Assistant",
+            "start_date": "2025-09-12",
+            "end_date": "2026-02-20",
+            "description": "Supported events and collected feedback data for improving workshops.",
+            "highlights": [
+              "Summarized survey feedback into actionable points.",
+              "Helped coordinate logistics for career fairs."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Economics Society",
+            "role": "Member",
+            "start_date": "2025-10-10",
+            "end_date": "2026-02-25",
+            "description": "Attended speaker events and practiced presenting short summaries."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0010",
+      "timestamp": "2026-02-14T17:02:39Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Computer Engineering",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.22,
+        "relevant_coursework": [
+          {
+            "course": "Computer Architecture",
+            "term": "Fall 2025",
+            "description": "Pipelining, caches, and performance tradeoffs."
+          },
+          {
+            "course": "Networks",
+            "term": "Winter 2026",
+            "description": "Protocols, routing, and distributed systems basics."
+          },
+          {
+            "course": "Databases",
+            "term": "Winter 2026",
+            "description": "SQL analytics, constraints, indexing, and query design."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Course Project Demo Award",
+            "term": "Winter 2026",
+            "description": "Recognized for a polished demo and clear explanation."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["C++", "Python", "SQL (PostgreSQL)", "Git/GitHub"],
+        "soft": ["Problem Solving", "Teamwork"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Network Traffic Analyzer",
+            "role": "Systems Developer",
+            "start_date": "2025-10-25",
+            "end_date": "2025-12-10",
+            "description": "Built a tool to parse packet logs and summarize traffic patterns.",
+            "highlights": [
+              "Extracted key metrics per protocol and endpoint.",
+              "Generated summary reports for lab assignments."
+            ],
+            "tools": ["C++", "Python"]
+          },
+          {
+            "name": "Student Placement Data Integration",
+            "role": "Database Engineer",
+            "start_date": "2026-01-22",
+            "end_date": "2026-03-03",
+            "description": "Integrated multiple placement datasets into a consistent JSON schema and designed queries for major-level insights.",
+            "highlights": [
+              "Created dataset-specific score formulas for comparability.",
+              "Implemented NTILE bucketing and computed lift metrics."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Dining Services",
+            "title": "Shift Lead (Student)",
+            "start_date": "2025-09-05",
+            "end_date": "2026-02-15",
+            "description": "Coordinated small teams during peak hours and handled schedule adjustments.",
+            "highlights": [
+              "Improved handoff notes and reduced missed tasks.",
+              "Trained new employees on workflows."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "ECE Society",
+            "role": "Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-25",
+            "description": "Participated in resume reviews and technical interview prep sessions."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0011",
+      "timestamp": "2026-02-09T12:27:56Z",
+      "college": {
+        "name": "California State University, Long Beach",
+        "degree": "B.S.",
+        "major": "Information Systems",
+        "graduation_date": "2026-05-25"
+      },
+      "academics": {
+        "cgpa": 3.56,
+        "relevant_coursework": [
+          {
+            "course": "Business Data Analytics",
+            "term": "Fall 2025",
+            "description": "SQL reporting, dashboards, and KPI tracking."
+          },
+          {
+            "course": "Database Management",
+            "term": "Fall 2025",
+            "description": "Schema design, normalization, constraints, and queries."
+          },
+          {
+            "course": "Systems Analysis",
+            "term": "Winter 2026",
+            "description": "Requirements gathering and process modeling."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Capstone Proposal Selected",
+            "term": "Winter 2026",
+            "description": "Proposal selected for departmental showcase."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["SQL (PostgreSQL)", "Python", "Excel/Sheets", "Git/GitHub"],
+        "soft": ["Stakeholder Communication", "Organization"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "KPI Reporting Pipeline",
+            "role": "Analytics Engineer",
+            "start_date": "2025-11-05",
+            "end_date": "2026-01-30",
+            "description": "Created a reporting table from multiple sources and produced weekly KPI dashboards.",
+            "highlights": [
+              "Automated repeated report generation with parameterized queries.",
+              "Documented metric definitions and edge cases."
+            ],
+            "tools": ["SQL", "PostgreSQL", "Python"]
+          },
+          {
+            "name": "Internship Tracker App",
+            "role": "Backend Developer",
+            "start_date": "2026-01-10",
+            "end_date": "2026-02-20",
+            "description": "Built a small database-backed app to track applications and outcomes over time.",
+            "highlights": [
+              "Designed schema for applications, contacts, and follow-ups.",
+              "Added filters for status and deadline reminders."
+            ],
+            "tools": ["SQL", "PostgreSQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Retail Tech Support",
+            "title": "Support Associate",
+            "start_date": "2025-09-01",
+            "end_date": "2026-02-10",
+            "description": "Assisted customers with device setup and basic troubleshooting.",
+            "highlights": [
+              "Explained technical steps in simple language.",
+              "Handled high-volume support during peak seasons."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "MIS Association",
+            "role": "Member",
+            "start_date": "2025-10-08",
+            "end_date": "2026-02-26",
+            "description": "Attended career talks and practiced presenting project summaries."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0012",
+      "timestamp": "2026-02-27T07:41:19Z",
+      "college": {
+        "name": "UC Santa Cruz",
+        "degree": "B.S.",
+        "major": "Computer Science: Game Design",
+        "graduation_date": "2026-06-16"
+      },
+      "academics": {
+        "cgpa": 3.12,
+        "relevant_coursework": [
+          {
+            "course": "Artificial Intelligence for Games",
+            "term": "Winter 2026",
+            "description": "Planning systems, behavior design, and game AI evaluation."
+          },
+          {
+            "course": "Data Structures",
+            "term": "Fall 2025",
+            "description": "Core algorithms and complexity analysis."
+          },
+          {
+            "course": "Databases",
+            "term": "Fall 2025",
+            "description": "SQL fundamentals and data modeling."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Game Jam Participant",
+            "term": "Winter 2026",
+            "description": "Built a playable prototype in a weekend with a small team."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["C#", "Python", "SQL (PostgreSQL)", "Git/GitHub"],
+        "soft": ["Creativity", "Teamwork"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "GOAP NPC Prototype",
+            "role": "AI Programmer",
+            "start_date": "2026-01-12",
+            "end_date": "2026-02-15",
+            "description": "Built a goal-oriented action planning prototype for NPC behavior with explainable action sequences.",
+            "highlights": [
+              "Implemented operators and methods for dynamic action selection.",
+              "Logged decisions to support debugging and evaluation."
+            ],
+            "tools": ["C#", "Python"]
+          },
+          {
+            "name": "Leaderboard + Match History DB",
+            "role": "Database Developer",
+            "start_date": "2025-11-18",
+            "end_date": "2026-01-10",
+            "description": "Designed a database for match results and leaderboards with queries for player stats.",
+            "highlights": [
+              "Created schema for players, matches, and scores.",
+              "Wrote queries for top players and recent match summaries."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Recreation",
+            "title": "Front Desk Assistant",
+            "start_date": "2025-09-20",
+            "end_date": "2026-02-18",
+            "description": "Managed check-ins and helped resolve scheduling questions.",
+            "highlights": [
+              "Handled requests efficiently during busy periods.",
+              "Kept accurate records and followed procedures."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Game Dev Club",
+            "role": "Member",
+            "start_date": "2025-10-05",
+            "end_date": "2026-02-27",
+            "description": "Shared project demos and collaborated in small teams."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0013",
+      "timestamp": "2026-02-05T15:19:07Z",
+      "college": {
+        "name": "UC Riverside",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-06-13"
+      },
+      "academics": {
+        "cgpa": 3.47,
+        "relevant_coursework": [
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "Normalization, SQL analytics, indexing, and transactions."
+          },
+          {
+            "course": "Machine Learning",
+            "term": "Winter 2026",
+            "description": "Classification/regression, evaluation, and model selection."
+          },
+          {
+            "course": "Web Development",
+            "term": "Fall 2025",
+            "description": "Frontend/backend fundamentals and API integration."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Department Scholarship Recipient",
+            "term": "Fall 2025",
+            "description": "Scholarship awarded for academic progress and involvement."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "React", "Git/GitHub"],
+        "soft": ["Communication", "Ownership"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Student Portfolio Website",
+            "role": "Frontend Developer",
+            "start_date": "2025-10-10",
+            "end_date": "2025-11-30",
+            "description": "Built a personal site showcasing projects and experience with a clean layout and navigation.",
+            "highlights": [
+              "Created reusable components for project pages.",
+              "Deployed updates and maintained version history."
+            ],
+            "tools": ["React", "JavaScript"]
+          },
+          {
+            "name": "Placement Predictor Baseline",
+            "role": "ML Developer",
+            "start_date": "2026-01-15",
+            "end_date": "2026-02-25",
+            "description": "Built baseline models to predict placement using structured features and produced interpretability summaries.",
+            "highlights": [
+              "Compared logistic regression vs tree-based baselines.",
+              "Summarized model behavior using feature importance."
+            ],
+            "tools": ["Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Student Computing Services",
+            "title": "Helpdesk Assistant",
+            "start_date": "2025-09-18",
+            "end_date": "2026-02-10",
+            "description": "Assisted students with account access and software installations.",
+            "highlights": [
+              "Created quick docs for repeated issues.",
+              "Supported multiple requests during peak times."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Women in Computing / Ally",
+            "role": "Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-20",
+            "description": "Attended workshops and career prep events."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0014",
+      "timestamp": "2026-02-24T18:09:58Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.A.",
+        "major": "Design",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.58,
+        "relevant_coursework": [
+          {
+            "course": "Design Research",
+            "term": "Fall 2025",
+            "description": "Interviewing, synthesis, and building design rationale."
+          },
+          {
+            "course": "Information Visualization",
+            "term": "Winter 2026",
+            "description": "Visual encodings, interactions, and storytelling design."
+          },
+          {
+            "course": "Data-Driven Design",
+            "term": "Winter 2026",
+            "description": "Using data to support design decisions and evaluation."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Studio Excellence Recognition",
+            "term": "Fall 2025",
+            "description": "Recognized for strong craft and iteration."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Figma", "JavaScript", "SQL (PostgreSQL)", "Git/GitHub"],
+        "soft": ["Storytelling", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Interactive Storytelling Dashboard",
+            "role": "Visualization Designer",
+            "start_date": "2026-01-08",
+            "end_date": "2026-02-23",
+            "description": "Designed a narrative dashboard with drill-down views to explain patterns in a dataset clearly.",
+            "highlights": [
+              "Created a consistent legend and labeling system.",
+              "Wrote a short design rationale connecting goals to views."
+            ],
+            "tools": ["JavaScript", "Figma"]
+          },
+          {
+            "name": "Resume Tailoring Prototype",
+            "role": "Prototype Designer",
+            "start_date": "2026-02-01",
+            "end_date": "2026-02-22",
+            "description": "Prototyped a workflow that selects the most relevant resume bullets for a target role based on keywords in descriptions.",
+            "highlights": [
+              "Defined a tagging scheme for experiences and projects.",
+              "Created a short output format for a 1-page resume."
+            ],
+            "tools": ["Figma"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Student Design Studio",
+            "title": "Design Assistant",
+            "start_date": "2025-09-28",
+            "end_date": "2026-02-20",
+            "description": "Assisted with critique sessions and maintained shared project assets.",
+            "highlights": [
+              "Managed file organization and version consistency.",
+              "Helped prepare slides for project reviews."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Design Club",
+            "role": "Member",
+            "start_date": "2025-10-10",
+            "end_date": "2026-02-25",
+            "description": "Participated in weekly critiques and rapid prototyping exercises."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0015",
+      "timestamp": "2026-02-01T09:08:33Z",
+      "college": {
+        "name": "UC Santa Barbara",
+        "degree": "B.S.",
+        "major": "Mathematics",
+        "graduation_date": "2026-06-11"
+      },
+      "academics": {
+        "cgpa": 3.81,
+        "relevant_coursework": [
+          {
+            "course": "Linear Algebra",
+            "term": "Fall 2025",
+            "description": "Vector spaces, eigenvalues, and applications to data problems."
+          },
+          {
+            "course": "Numerical Analysis",
+            "term": "Winter 2026",
+            "description": "Numerical optimization and stability considerations."
+          },
+          {
+            "course": "Probability",
+            "term": "Fall 2025",
+            "description": "Distributions, expectation, and stochastic reasoning."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Undergraduate Scholarship",
+            "term": "Fall 2025",
+            "description": "Awarded based on academic performance."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "R", "SQL (PostgreSQL)", "Git/GitHub"],
+        "soft": ["Analytical Thinking", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Optimization Mini-Study",
+            "role": "Research Project Contributor",
+            "start_date": "2025-10-05",
+            "end_date": "2025-12-01",
+            "description": "Explored optimization methods on small datasets and summarized behavior across parameter settings.",
+            "highlights": [
+              "Compared outcomes across different initializations.",
+              "Wrote a short report explaining results and tradeoffs."
+            ],
+            "tools": ["Python"]
+          },
+          {
+            "name": "SQL Analytics Practice Set",
+            "role": "Data Analyst",
+            "start_date": "2026-01-10",
+            "end_date": "2026-02-05",
+            "description": "Built queries using joins and window functions to answer business-style questions.",
+            "highlights": [
+              "Used CTEs to keep complex queries readable.",
+              "Validated results with small sanity checks."
+            ],
+            "tools": ["SQL", "PostgreSQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Math Learning Center",
+            "title": "Peer Tutor",
+            "start_date": "2025-09-15",
+            "end_date": "2026-02-22",
+            "description": "Tutored calculus and linear algebra with a focus on problem solving habits.",
+            "highlights": [
+              "Helped students build step-by-step reasoning.",
+              "Reviewed homework solutions for common mistakes."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Undergrad Research Seminar",
+            "role": "Attendee",
+            "start_date": "2025-10-08",
+            "end_date": "2026-02-18",
+            "description": "Attended talks and practiced summarizing technical ideas."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0016",
+      "timestamp": "2026-02-20T20:44:10Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Data Science",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.33,
+        "relevant_coursework": [
+          {
+            "course": "Data Mining",
+            "term": "Fall 2025",
+            "description": "Clustering, classification, evaluation, and feature selection."
+          },
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "Schema design, SQL analytics, and data pipeline basics."
+          },
+          {
+            "course": "Visualization",
+            "term": "Winter 2026",
+            "description": "Visual encodings and interactive exploration principles."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Team Collaboration Award",
+            "term": "Winter 2026",
+            "description": "Recognized for reliable contributions to a team deliverable."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "Pandas", "Git/GitHub"],
+        "soft": ["Organization", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Student Outcome ETL",
+            "role": "Data Engineer",
+            "start_date": "2025-12-02",
+            "end_date": "2026-02-12",
+            "description": "Designed a small ETL process to unify multiple CSVs into a clean dataset and JSON export.",
+            "highlights": [
+              "Standardized column names and resolved missing values.",
+              "Created consistent identifiers for downstream joins."
+            ],
+            "tools": ["Python", "SQL"]
+          },
+          {
+            "name": "Major-Level Bucket Summary",
+            "role": "Analyst",
+            "start_date": "2026-02-01",
+            "end_date": "2026-03-01",
+            "description": "Computed low/medium/high buckets and summarized how bucket shifts affect outcomes for each major group.",
+            "highlights": [
+              "Used NTILE to assign buckets within each dataset.",
+              "Calculated high-vs-low placement differences per category."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Dining",
+            "title": "Student Worker",
+            "start_date": "2025-09-10",
+            "end_date": "2026-02-10",
+            "description": "Worked in a fast-paced environment and coordinated with teammates during rush hours.",
+            "highlights": [
+              "Maintained accuracy under time pressure.",
+              "Assisted in training new hires."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Data Science Club",
+            "role": "Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-25",
+            "description": "Attended project nights and reviewed peers’ work."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0017",
+      "timestamp": "2026-02-12T06:18:27Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 2.94,
+        "relevant_coursework": [
+          {
+            "course": "Intro to Programming",
+            "term": "Fall 2024",
+            "description": "Core programming concepts and debugging."
+          },
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "SQL joins, data modeling, and query patterns."
+          },
+          {
+            "course": "Web Development",
+            "term": "Winter 2026",
+            "description": "APIs, frontend basics, and deployment workflow."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Course Improvement Recognition",
+            "term": "Winter 2026",
+            "description": "Recognized for significant improvement across the quarter."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "JavaScript", "Git/GitHub"],
+        "soft": ["Persistence", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Study Group Organizer Tool",
+            "role": "Developer",
+            "start_date": "2026-01-10",
+            "end_date": "2026-02-20",
+            "description": "Built a simple tool to match students by availability and course preferences.",
+            "highlights": [
+              "Implemented basic filtering and matching logic.",
+              "Focused on clear UX and simple data storage."
+            ],
+            "tools": ["JavaScript", "SQL"]
+          },
+          {
+            "name": "SQL Practice Portfolio",
+            "role": "Learner/Analyst",
+            "start_date": "2025-12-01",
+            "end_date": "2026-01-15",
+            "description": "Created a set of SQL queries demonstrating joins, aggregations, and window functions on sample datasets.",
+            "highlights": [
+              "Wrote CTE-based queries to keep logic readable.",
+              "Validated results with row counts and spot checks."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Mailroom",
+            "title": "Student Assistant",
+            "start_date": "2025-09-28",
+            "end_date": "2026-02-08",
+            "description": "Sorted packages and helped students with pickup and tracking issues.",
+            "highlights": [
+              "Handled peak traffic efficiently.",
+              "Maintained accurate records and labeling."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Peer Coding Group",
+            "role": "Member",
+            "start_date": "2025-11-01",
+            "end_date": "2026-02-20",
+            "description": "Met weekly to practice coding problems and review solutions."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0018",
+      "timestamp": "2026-02-28T22:31:52Z",
+      "college": {
+        "name": "UC Merced",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-05-30"
+      },
+      "academics": {
+        "cgpa": 3.09,
+        "relevant_coursework": [
+          {
+            "course": "Databases",
+            "term": "Fall 2025",
+            "description": "Schema design, SQL analytics, and constraints."
+          },
+          {
+            "course": "Algorithms",
+            "term": "Winter 2026",
+            "description": "Runtime analysis, classic algorithms, and optimization."
+          },
+          {
+            "course": "Software Engineering",
+            "term": "Winter 2026",
+            "description": "Team workflows, version control, and testing basics."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Community Service Recognition",
+            "term": "Fall 2025",
+            "description": "Recognized for consistent volunteering involvement."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "Docker", "Git/GitHub"],
+        "soft": ["Teamwork", "Problem Solving"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Internship Application Tracker",
+            "role": "Developer",
+            "start_date": "2025-11-20",
+            "end_date": "2026-01-18",
+            "description": "Built a small tracking tool for applications, deadlines, and follow-ups.",
+            "highlights": [
+              "Designed a normalized schema to avoid duplicate entries.",
+              "Added summary queries for weekly progress reviews."
+            ],
+            "tools": ["PostgreSQL", "SQL"]
+          },
+          {
+            "name": "Containerized API Demo",
+            "role": "Backend Developer",
+            "start_date": "2026-01-25",
+            "end_date": "2026-02-20",
+            "description": "Created a small API and packaged it with Docker to run consistently across machines.",
+            "highlights": [
+              "Defined environment variables and basic configs.",
+              "Documented run steps for reproducibility."
+            ],
+            "tools": ["Docker", "Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Events",
+            "title": "Student Staff",
+            "start_date": "2025-09-05",
+            "end_date": "2026-02-25",
+            "description": "Supported event setup and coordinated logistics with staff leads.",
+            "highlights": [
+              "Worked reliably on time-sensitive tasks.",
+              "Communicated changes clearly during events."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Coding Club",
+            "role": "Member",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-28",
+            "description": "Practiced coding problems and shared project demos."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0019",
+      "timestamp": "2026-02-06T11:03:55Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Biomedical Engineering",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.44,
+        "relevant_coursework": [
+          {
+            "course": "Biostatistics",
+            "term": "Fall 2025",
+            "description": "Statistical methods for biomedical data and interpretation."
+          },
+          {
+            "course": "Programming for Biomedical Data",
+            "term": "Winter 2026",
+            "description": "Data processing and analysis with reproducible workflows."
+          },
+          {
+            "course": "Database Systems",
+            "term": "Fall 2025",
+            "description": "Relational modeling and SQL for structured datasets."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Research Participation Certificate",
+            "term": "Winter 2026",
+            "description": "Completed a research training and participation requirement."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "Pandas", "Git/GitHub"],
+        "soft": ["Attention to Detail", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Clinical Notes Summary Prototype",
+            "role": "Data Analyst",
+            "start_date": "2025-11-10",
+            "end_date": "2026-01-20",
+            "description": "Built a prototype to organize and summarize clinical note metadata for quick review.",
+            "highlights": [
+              "Defined filtering rules for relevant vs irrelevant note categories.",
+              "Produced summaries for cohort-level comparison."
+            ],
+            "tools": ["Python", "SQL"]
+          },
+          {
+            "name": "Patient Journey Timeline Mockup",
+            "role": "Visualization Contributor",
+            "start_date": "2026-01-25",
+            "end_date": "2026-02-25",
+            "description": "Created a simple timeline view that highlights key events and changes over time.",
+            "highlights": [
+              "Designed encodings for event categories and frequency.",
+              "Created a short explanation for interpreting the view."
+            ],
+            "tools": ["JavaScript"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Campus Research Lab",
+            "title": "Student Assistant",
+            "start_date": "2025-10-01",
+            "end_date": "2026-02-18",
+            "description": "Assisted with organizing datasets and documenting analysis steps.",
+            "highlights": [
+              "Maintained reproducible notes for experiments.",
+              "Helped verify counts and data consistency."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "Biomedical Society",
+            "role": "Member",
+            "start_date": "2025-10-05",
+            "end_date": "2026-02-22",
+            "description": "Attended guest talks and small peer study sessions."
+          }
+        ]
+      }
+    },
+    {
+      "student_key": "u_0020",
+      "timestamp": "2026-02-23T09:55:31Z",
+      "college": {
+        "name": "UC Davis",
+        "degree": "B.S.",
+        "major": "Computer Science",
+        "graduation_date": "2026-06-15"
+      },
+      "academics": {
+        "cgpa": 3.95,
+        "relevant_coursework": [
+          {
+            "course": "Advanced Database Systems",
+            "term": "Winter 2026",
+            "description": "Query optimization, indexing strategies, and advanced SQL analytics."
+          },
+          {
+            "course": "Distributed Systems",
+            "term": "Winter 2026",
+            "description": "Reliability, replication concepts, and performance considerations."
+          },
+          {
+            "course": "Machine Learning",
+            "term": "Fall 2025",
+            "description": "Evaluation design, validation, and model comparison."
+          }
+        ],
+        "honors_or_awards": [
+          {
+            "title": "Dean’s List",
+            "term": "Winter 2026",
+            "description": "Top academic standing for the quarter."
+          }
+        ]
+      },
+      "skills": {
+        "technical": ["Python", "SQL (PostgreSQL)", "MongoDB", "Docker", "Git/GitHub"],
+        "soft": ["Leadership", "Communication"]
+      },
+      "experience": {
+        "projects": [
+          {
+            "name": "Master Resume JSON Builder",
+            "role": "Data Engineer",
+            "start_date": "2026-01-12",
+            "end_date": "2026-03-04",
+            "description": "Designed a master JSON collection combining multiple sources to support relational, MongoDB, vector, and graph use cases.",
+            "highlights": [
+              "Standardized document structure across datasets with consistent keys.",
+              "Added dataset-specific scoring and major-level aggregation views."
+            ],
+            "tools": ["PostgreSQL", "SQL", "Git/GitHub"]
+          },
+          {
+            "name": "Search + Similarity Evaluation Notes",
+            "role": "ML/IR Contributor",
+            "start_date": "2026-02-05",
+            "end_date": "2026-02-26",
+            "description": "Drafted a plan for vector-based similarity search and how to summarize peer statistics for recommendations.",
+            "highlights": [
+              "Defined a consistent text template for embedding inputs.",
+              "Outlined top-k aggregation metrics for placement and gaps."
+            ],
+            "tools": ["Python"]
+          }
+        ],
+        "work": [
+          {
+            "company": "Undergraduate Teaching Support",
+            "title": "Reader / Grader",
+            "start_date": "2025-09-20",
+            "end_date": "2026-02-28",
+            "description": "Graded assignments and helped maintain consistency using rubrics.",
+            "highlights": [
+              "Wrote short feedback comments and checked edge cases in submissions.",
+              "Tracked common errors and shared notes with the teaching team."
+            ]
+          }
+        ],
+        "leadership_and_activities": [
+          {
+            "activity": "CS Project Team",
+            "role": "Team Lead",
+            "start_date": "2025-11-01",
+            "end_date": "2026-03-01",
+            "description": "Coordinated tasks and ensured documentation was clear and up to date."
+          }
+        ]
+      }
+    }
+  ]
+}
