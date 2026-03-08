@@ -1,0 +1,241 @@
+{
+  "student_key": "u_0003",
+  "resume_id": "0003",
+  "skills": {
+    "programming_languages": ["Python", "SQL", "R", "Java", "JavaScript"],
+    "ml_data": ["pandas", "numpy", "scikit-learn", "statsmodels", "xgboost (basic)"],
+    "visualization": ["matplotlib", "plotly", "Tableau"],
+    "data_engineering": ["ETL (Python/SQL)", "data cleaning", "feature engineering"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite"],
+    "cloud_tools": ["AWS (S3) (basic)", "Docker (basic)", "GitHub Actions (basic)"],
+    "soft_skills": ["technical writing", "presentation", "stakeholder communication", "team collaboration"]
+  },
+  "education": [
+    {
+      "institution": "University of California, Davis",
+      "degree": "M.S.",
+      "field_of_study": "Statistics",
+      "start_date": "2023-09",
+      "end_date": "2025-06",
+      "status": "completed",
+      "cgpa": 3.77,
+      "coursework": [
+        { "code": "DSC 241", "name": "Statistical Models" },
+        { "code": "STA 207", "name": "Applied Regression" },
+        { "code": "STA 141A", "name": "Statistical Data Science" },
+        { "code": "ECS 171", "name": "Machine Learning" }
+      ],
+      "highlights": [
+        "Completed graduate coursework in regression, diagnostics, model selection, and resampling-based uncertainty."
+      ]
+    },
+    {
+      "institution": "California State University, Long Beach",
+      "degree": "B.S.",
+      "field_of_study": "Applied Mathematics (Statistics option)",
+      "start_date": "2019-08",
+      "end_date": "2023-05",
+      "status": "completed",
+      "cgpa": 3.68,
+      "coursework": [
+        { "code": "MATH 380", "name": "Probability and Statistics" },
+        { "code": "MATH 444", "name": "Regression Analysis" },
+        { "code": "CS 100", "name": "Programming and Data Structures" }
+      ],
+      "honors_awards": [
+        { "title": "Dean’s List", "date": "2021-12", "details": "Academic achievement recognition" }
+      ]
+    }
+  ],
+  "high_school": {
+    "institution": "Evergreen Valley High School",
+    "location": "San Jose, CA",
+    "start_date": "2015-08",
+    "end_date": "2019-06",
+    "focus_note": "Master resume includes all activities; junior/senior years include extra detail.",
+    "activities": [
+      {
+        "title": "DECA (Chapter Officer)",
+        "start_date": "2017-09",
+        "end_date": "2019-05",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Prepared competition case studies and practice presentations; coached newer members on structure and timing.",
+          "Organized chapter meeting agendas and coordinated event sign-ups and reminders."
+        ]
+      },
+      {
+        "title": "Varsity Track and Field",
+        "start_date": "2017-02",
+        "end_date": "2019-05",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Competed in sprint events; maintained weekly training logs and tracked personal performance goals.",
+          "Helped mentor underclassmen on training routines and meet preparation."
+        ]
+      },
+      {
+        "title": "Math Tutoring (Peer Tutor)",
+        "start_date": "2018-09",
+        "end_date": "2019-05",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Tutored algebra/precalculus students weekly; created custom practice sets and review notes."
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Civic Insights Lab",
+      "role_title": "Data Science Intern",
+      "employment_type": "Internship",
+      "location": "Remote",
+      "start_date": "2024-06",
+      "end_date": "2024-09",
+      "skills_used": ["Python", "SQL", "pandas", "statsmodels", "Tableau"],
+      "bullets": [
+        "Built a regression-based model to explain service request volume using weather and calendar variables; summarized key drivers in a stakeholder report.",
+        "Cleaned and joined multi-table datasets in SQL; implemented reproducible analysis notebooks in Python.",
+        "Created a dashboard to monitor weekly KPIs and anomalies, improving visibility into trend changes."
+      ]
+    },
+    {
+      "company": "UC Davis Department of Statistics",
+      "role_title": "Reader / Grader",
+      "employment_type": "Part-time",
+      "location": "Davis, CA",
+      "start_date": "2023-10",
+      "end_date": "2024-06",
+      "skills_used": ["R", "technical communication"],
+      "bullets": [
+        "Graded homework and projects focused on regression, diagnostics, and resampling; provided written feedback aligned with rubrics.",
+        "Supported office hours during exam review periods and helped students debug analysis code."
+      ]
+    },
+    {
+      "company": "Student Success Center",
+      "role_title": "Math & Statistics Tutor",
+      "employment_type": "Part-time",
+      "location": "Long Beach, CA",
+      "start_date": "2021-01",
+      "end_date": "2023-05",
+      "skills_used": ["communication", "problem-solving"],
+      "bullets": [
+        "Tutored undergraduate students in calculus, probability, and introductory statistics; explained concepts and guided problem-solving steps.",
+        "Developed short review guides for common exam topics and shared them with tutoring teams."
+      ]
+    }
+  ],
+  "research": [
+    {
+      "lab_or_group": "Applied Statistics Group",
+      "institution": "UC Davis",
+      "role_title": "Graduate Research Assistant",
+      "start_date": "2024-01",
+      "end_date": "2025-05",
+      "focus_area": "Model diagnostics and uncertainty quantification for observational studies",
+      "tools": ["R", "Python", "statsmodels"],
+      "bullets": [
+        "Evaluated regression model assumptions using residual diagnostics and sensitivity checks.",
+        "Implemented bootstrap procedures for uncertainty estimates in model-derived quantities."
+      ],
+      "artifacts": [
+        { "type": "poster", "title": "Diagnostics and Bootstrap Uncertainty in Regression", "date": "2025-04" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Bike Rental Demand Modeling",
+      "category": "course_project",
+      "start_date": "2026-02",
+      "end_date": "2026-03",
+      "bullets": [
+        "Built daily and hourly regression models for bike rental demand; compared baseline OLS to interaction and nonlinear extensions.",
+        "Used model selection (AIC/CV RMSE) and diagnostics to choose a final model; applied bootstrap to quantify uncertainty in key effects."
+      ]
+    },
+    {
+      "project_name": "Airbnb Price Modeling",
+      "category": "course_project",
+      "start_date": "2024-10",
+      "end_date": "2024-12",
+      "bullets": [
+        "Modeled listing prices using multiple regression with categorical predictors; performed model selection and residual diagnostics.",
+        "Compared linear vs polynomial specifications for key continuous predictors and reported effects with confidence intervals."
+      ]
+    },
+    {
+      "project_name": "Campus Survey Analysis",
+      "category": "personal_project",
+      "start_date": "2023-02",
+      "end_date": "2023-04",
+      "bullets": [
+        "Cleaned survey responses and created summary tables and plots for demographic and outcome variables.",
+        "Built logistic regression baselines to explore associations between student outcomes and covariates."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Graduate Student Representative",
+      "organization": "Statistics Student Association",
+      "start_date": "2024-09",
+      "end_date": "2025-06",
+      "bullets": [
+        "Organized study sessions for core courses and coordinated peer support groups.",
+        "Helped plan a student research poster session and facilitated feedback rounds."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Graduate Merit Scholarship",
+      "organization": "UC Davis",
+      "date": "2023-09",
+      "details": "Merit-based award supporting graduate study"
+    },
+    {
+      "title": "Undergraduate Excellence Award",
+      "organization": "CSU Long Beach",
+      "date": "2022-05",
+      "details": "Recognition for academic performance and tutoring contributions"
+    }
+  ],
+  "certifications": [
+    { "title": "Tableau Fundamentals", "issuer": "Online Learning Platform", "date": "2024-02" },
+    { "title": "SQL Certificate", "issuer": "Online Learning Platform", "date": "2022-08" }
+  ],
+  "publications_presentations": [
+    {
+      "type": "poster",
+      "title": "Diagnostics and Bootstrap Uncertainty in Regression",
+      "venue": "Graduate Research Symposium",
+      "date": "2025-04"
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Community Tutoring Center",
+      "role": "Volunteer Tutor",
+      "start_date": "2020-10",
+      "end_date": "2021-06",
+      "bullets": [
+        "Provided weekly tutoring support in math and introductory statistics for local high school students."
+      ]
+    }
+  ],
+  "activities_interests": {
+    "interests": ["running", "cooking", "podcasts"],
+    "languages": [
+      { "language": "English", "proficiency": "Native" },
+      { "language": "Spanish", "proficiency": "Conversational" }
+    ]
+  },
+  "metadata": {
+    "last_updated": "2026-03-07",
+    "source": "synthetic_sample",
+    "notes": "Master resume intentionally includes exhaustive content for downstream ranking/selection into tailored resumes."
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "student_key": "u_0005",
+  "resume_id": "0005",
+  "skills": {
+    "programming_languages": ["Python", "SQL", "R", "JavaScript"],
+    "ml_data": ["pandas", "numpy", "scikit-learn", "statsmodels"],
+    "visualization": ["matplotlib", "plotly", "Tableau"],
+    "data_engineering": ["ETL (Python/SQL)", "data cleaning", "feature engineering (basic)"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite"],
+    "cloud_tools": ["AWS (S3) (basic)", "Docker (basic)", "GitHub Actions (basic)"],
+    "soft_skills": ["technical writing", "presentation", "stakeholder communication", "team collaboration"]
+  },
+  "education": [
+    {
+      "institution": "University of California, Santa Barbara",
+      "degree": "B.S.",
+      "field_of_study": "Statistics and Data Science",
+      "start_date": "2020-09",
+      "end_date": "2024-06",
+      "status": "completed",
+      "cgpa": 3.66,
+      "coursework": [
+        { "code": "PSTAT 120A", "name": "Probability and Statistics" },
+        { "code": "PSTAT 126", "name": "Regression Analysis" },
+        { "code": "PSTAT 131", "name": "Statistical Machine Learning" },
+        { "code": "CMPSC 8", "name": "Intro to Programming" },
+        { "code": "CMPSC 24", "name": "Problem Solving with Computers" }
+      ],
+      "honors_awards": [
+        { "title": "Dean’s Honors", "date": "2023-03", "details": "Quarterly academic recognition" }
+      ]
+    }
+  ],
+  "high_school": {
+    "institution": "Westlake High School",
+    "location": "Thousand Oaks, CA",
+    "start_date": "2016-08",
+    "end_date": "2020-06",
+    "focus_note": "Master resume includes all activities; junior/senior years include extra detail.",
+    "activities": [
+      {
+        "title": "Student Government (Treasurer)",
+        "start_date": "2018-08",
+        "end_date": "2020-06",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Managed budget tracking and purchase requests for student events; maintained spreadsheets and monthly summaries.",
+          "Coordinated fundraising planning and reconciled event revenues and expenses."
+        ]
+      },
+      {
+        "title": "Newspaper / Media Club (Editor)",
+        "start_date": "2019-08",
+        "end_date": "2020-06",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Edited articles and ensured publication deadlines were met; created a review checklist for consistency.",
+          "Helped organize article assignments and tracked progress across sections."
+        ]
+      },
+      {
+        "title": "Volunteer Tutor (Math)",
+        "start_date": "2019-09",
+        "end_date": "2020-05",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Tutored algebra and precalculus students weekly; created practice worksheets and review notes.",
+          "Supported peers with homework planning and exam preparation strategies."
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Seaside Logistics",
+      "role_title": "Data Analyst Intern",
+      "employment_type": "Internship",
+      "location": "Hybrid",
+      "start_date": "2023-06",
+      "end_date": "2023-09",
+      "skills_used": ["Python", "SQL", "pandas", "Tableau"],
+      "bullets": [
+        "Merged shipment, carrier, and warehouse tables in SQL to create weekly performance datasets for reporting.",
+        "Built dashboards tracking on-time delivery rate, delay reasons, and route-level volume trends.",
+        "Developed regression baselines to explain delays using weather, distance, and seasonal variables; summarized findings for stakeholders."
+      ]
+    },
+    {
+      "company": "University Housing (UCSB)",
+      "role_title": "Student Operations Assistant",
+      "employment_type": "Part-time",
+      "location": "Santa Barbara, CA",
+      "start_date": "2022-01",
+      "end_date": "2023-06",
+      "skills_used": ["customer support", "documentation", "time management"],
+      "bullets": [
+        "Supported front-desk operations and handled service requests; logged issues and documented recurring resolutions.",
+        "Assisted with weekly occupancy and service summary reports for supervisors."
+      ]
+    },
+    {
+      "company": "Campus Dining Services",
+      "role_title": "Student Worker",
+      "employment_type": "Part-time",
+      "location": "Santa Barbara, CA",
+      "start_date": "2021-10",
+      "end_date": "2021-12",
+      "skills_used": ["teamwork", "operations"],
+      "bullets": [
+        "Supported daily operations and coordinated shift tasks; ensured accurate inventory restocking and end-of-day cleanup."
+      ]
+    }
+  ],
+  "research": [
+    {
+      "lab_or_group": "Applied Data Science Lab",
+      "institution": "University of California, Santa Barbara",
+      "role_title": "Undergraduate Research Assistant",
+      "start_date": "2023-10",
+      "end_date": "2024-05",
+      "focus_area": "Regression modeling and evaluation on observational datasets",
+      "tools": ["R", "Python", "pandas", "statsmodels"],
+      "bullets": [
+        "Assisted with data cleaning and exploratory analysis for observational datasets used in regression studies.",
+        "Generated model diagnostics and short summaries discussing assumptions and limitations."
+      ],
+      "artifacts": [
+        { "type": "poster", "title": "Regression Modeling in Observational Data", "date": "2024-05" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Bike Rental Demand Modeling",
+      "category": "course_project",
+      "start_date": "2026-02",
+      "end_date": "2026-03",
+      "bullets": [
+        "Built daily and hourly regression models for bike rental demand; compared baseline OLS to interaction and nonlinear extensions.",
+        "Used model selection (AIC/CV RMSE) and diagnostics to choose a final model; applied bootstrap to quantify uncertainty in key effects."
+      ]
+    },
+    {
+      "project_name": "Retail Sales Dashboard",
+      "category": "course_project",
+      "start_date": "2023-02",
+      "end_date": "2023-03",
+      "bullets": [
+        "Cleaned and joined multi-source retail data; created summary tables for revenue, repeat customers, and seasonal trends.",
+        "Built interactive visual summaries and wrote a short report highlighting top drivers of weekly sales variation."
+      ]
+    },
+    {
+      "project_name": "Housing Maintenance Ticket Analyzer",
+      "category": "personal_project",
+      "start_date": "2022-10",
+      "end_date": "2022-12",
+      "bullets": [
+        "Explored maintenance ticket categories and turnaround time distributions; created plots to identify bottlenecks.",
+        "Tested a regression baseline to estimate turnaround time using category, time-of-year, and workload indicators."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Study Group Coordinator",
+      "organization": "Statistics Student Club",
+      "start_date": "2022-09",
+      "end_date": "2023-06",
+      "bullets": [
+        "Organized weekly study sessions for probability and regression courses; prepared review problems and facilitated discussion.",
+        "Coordinated peer support for project debugging sessions and exam preparation."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Undergraduate Research Mini-Grant",
+      "organization": "University of California, Santa Barbara",
+      "date": "2024-02",
+      "details": "Small grant supporting undergraduate research participation"
+    }
+  ],
+  "certifications": [
+    { "title": "Tableau Fundamentals", "issuer": "Online Learning Platform", "date": "2023-07" },
+    { "title": "SQL Certificate", "issuer": "Online Learning Platform", "date": "2022-08" }
+  ],
+  "publications_presentations": [
+    {
+      "type": "poster",
+      "title": "Regression Modeling in Observational Data",
+      "venue": "Undergraduate Research Showcase",
+      "date": "2024-05"
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Community Food Pantry",
+      "role": "Volunteer",
+      "start_date": "2021-11",
+      "end_date": "2022-05",
+      "bullets": [
+        "Assisted with sorting donations, organizing distributions, and tracking inventory needs during weekly shifts."
+      ]
+    }
+  ],
+  "activities_interests": {
+    "interests": ["hiking", "photography", "baking"],
+    "languages": [
+      { "language": "English", "proficiency": "Native" },
+      { "language": "Mandarin", "proficiency": "Conversational" }
+    ]
+  },
+  "metadata": {
+    "last_updated": "2026-03-07",
+    "source": "synthetic_sample",
+    "notes": "Master resume intentionally includes exhaustive content for downstream ranking/selection into tailored resumes."
+  }
+}

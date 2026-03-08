@@ -1,0 +1,220 @@
+{
+  "student_key": "u_0004",
+  "resume_id": "0004",
+  "skills": {
+    "programming_languages": ["Python", "SQL", "JavaScript", "TypeScript"],
+    "ml_data": ["pandas", "numpy", "scikit-learn (basic)", "statsmodels (basic)"],
+    "visualization": ["matplotlib", "plotly", "Tableau"],
+    "data_engineering": ["ETL (Python/SQL)", "data cleaning", "API integration", "logging/monitoring (basic)"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite"],
+    "cloud_tools": ["AWS (S3, Lambda) (basic)", "Docker (basic)", "GitHub Actions"],
+    "soft_skills": ["technical writing", "stakeholder communication", "project planning", "team collaboration"]
+  },
+  "education": [
+    {
+      "institution": "University of California, Irvine",
+      "degree": "B.S.",
+      "field_of_study": "Informatics",
+      "start_date": "2020-09",
+      "end_date": "2024-06",
+      "status": "completed",
+      "cgpa": 3.59,
+      "coursework": [
+        { "code": "INF 115", "name": "Software Design" },
+        { "code": "INF 131", "name": "Human-Computer Interaction" },
+        { "code": "STATS 110", "name": "Statistical Methods" },
+        { "code": "CS 122A", "name": "Intro to Data Management" }
+      ],
+      "honors_awards": [
+        { "title": "Dean’s Honor List", "date": "2023-06", "details": "Academic achievement recognition" }
+      ]
+    }
+  ],
+  "high_school": {
+    "institution": "Mission Vista High School",
+    "location": "Oceanside, CA",
+    "start_date": "2016-08",
+    "end_date": "2020-06",
+    "focus_note": "Master resume includes all activities; junior/senior years include extra detail.",
+    "activities": [
+      {
+        "title": "Key Club (Service Chair)",
+        "start_date": "2018-09",
+        "end_date": "2020-05",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Planned monthly service events and coordinated volunteer sign-ups for 40+ students.",
+          "Tracked participation hours and maintained internal spreadsheets for officer reporting."
+        ]
+      },
+      {
+        "title": "Yearbook (Editor)",
+        "start_date": "2019-08",
+        "end_date": "2020-06",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Managed deadlines for 10+ sections; coordinated content collection and final reviews.",
+          "Standardized layout templates and proofreading checklists to reduce last-minute revisions."
+        ]
+      },
+      {
+        "title": "Math Tutoring (Peer Tutor)",
+        "start_date": "2019-09",
+        "end_date": "2020-05",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Provided weekly tutoring in algebra and statistics; created practice worksheets and review guides.",
+          "Helped students break down multi-step word problems and check solutions systematically."
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Canyon Market Insights",
+      "role_title": "Data Analyst Intern",
+      "employment_type": "Internship",
+      "location": "Hybrid",
+      "start_date": "2023-06",
+      "end_date": "2023-09",
+      "skills_used": ["Python", "SQL", "pandas", "Tableau"],
+      "bullets": [
+        "Cleaned and joined marketing + transaction datasets in SQL to produce weekly reporting tables.",
+        "Built Tableau dashboards for campaign performance and customer segments, including drill-down views by channel and region.",
+        "Wrote Python scripts to automate data extraction and generate recurring summary reports for stakeholders."
+      ]
+    },
+    {
+      "company": "Student Technology Services",
+      "role_title": "Web Developer Assistant",
+      "employment_type": "Part-time",
+      "location": "Irvine, CA",
+      "start_date": "2022-01",
+      "end_date": "2023-06",
+      "skills_used": ["JavaScript", "TypeScript", "HTML/CSS", "Git"],
+      "bullets": [
+        "Maintained and updated internal web tools used by student staff for scheduling and ticket tracking.",
+        "Implemented UI improvements and bug fixes based on user feedback; added small features to improve usability.",
+        "Documented common troubleshooting steps and contributed to onboarding materials for new student workers."
+      ]
+    },
+    {
+      "company": "Campus Library",
+      "role_title": "Student Assistant",
+      "employment_type": "Part-time",
+      "location": "Irvine, CA",
+      "start_date": "2021-10",
+      "end_date": "2022-12",
+      "skills_used": ["customer support", "documentation", "time management"],
+      "bullets": [
+        "Supported front desk operations and helped students locate resources and resolve basic account issues.",
+        "Assisted staff with data entry and weekly circulation summaries."
+      ]
+    }
+  ],
+  "research": [
+    {
+      "lab_or_group": "Applied HCI Studio",
+      "institution": "University of California, Irvine",
+      "role_title": "Undergraduate Research Assistant",
+      "start_date": "2023-01",
+      "end_date": "2023-12",
+      "focus_area": "User studies and data-driven evaluation of interface changes",
+      "tools": ["Python", "R (basic)", "survey tools"],
+      "bullets": [
+        "Helped design and run small user studies to evaluate interface changes and usability improvements.",
+        "Cleaned survey results and produced summary plots/tables to support research writeups."
+      ],
+      "artifacts": [
+        { "type": "poster", "title": "Evaluating Interface Changes with User Feedback", "date": "2023-05" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Bike Rental Demand Modeling",
+      "category": "course_project",
+      "start_date": "2026-02",
+      "end_date": "2026-03",
+      "bullets": [
+        "Built daily and hourly regression models for bike rental demand; compared baseline OLS to interaction and nonlinear extensions.",
+        "Used model selection (AIC/CV RMSE) and diagnostics to choose a final model; applied bootstrap to quantify uncertainty in key effects."
+      ]
+    },
+    {
+      "project_name": "Volunteer Matching Dashboard",
+      "category": "course_project",
+      "start_date": "2023-10",
+      "end_date": "2023-12",
+      "bullets": [
+        "Designed a simple dashboard that summarizes volunteer sign-ups and event participation trends over time.",
+        "Implemented data cleaning rules and created visual summaries to support planning for future events."
+      ]
+    },
+    {
+      "project_name": "Campus Event Check-in Tool",
+      "category": "personal_project",
+      "start_date": "2022-07",
+      "end_date": "2022-09",
+      "bullets": [
+        "Built a lightweight check-in workflow for small events with simple data export for attendance tracking.",
+        "Added basic validation to reduce duplicate entries and improve data quality."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Workshop Coordinator",
+      "organization": "Data & Design Student Club",
+      "start_date": "2022-09",
+      "end_date": "2023-06",
+      "bullets": [
+        "Organized weekly skill-building workshops on SQL, data visualization, and project demos.",
+        "Coordinated speaker logistics and collected attendee feedback to improve future sessions."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Undergraduate Project Award",
+      "organization": "Informatics Department",
+      "date": "2024-05",
+      "details": "Recognized for a capstone project and presentation quality"
+    }
+  ],
+  "certifications": [
+    { "title": "Tableau Desktop Specialist", "issuer": "Tableau", "date": "2023-08" },
+    { "title": "SQL Fundamentals Certificate", "issuer": "Online Learning Platform", "date": "2022-06" }
+  ],
+  "publications_presentations": [
+    {
+      "type": "poster",
+      "title": "Evaluating Interface Changes with User Feedback",
+      "venue": "Undergraduate Research Symposium",
+      "date": "2023-05"
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Community Tech Center",
+      "role": "Volunteer",
+      "start_date": "2021-06",
+      "end_date": "2022-08",
+      "bullets": [
+        "Helped run beginner computer literacy sessions; assisted with troubleshooting and guided practice activities."
+      ]
+    }
+  ],
+  "activities_interests": {
+    "interests": ["hiking", "photography", "cooking"],
+    "languages": [
+      { "language": "English", "proficiency": "Native" },
+      { "language": "Korean", "proficiency": "Conversational" }
+    ]
+  },
+  "metadata": {
+    "last_updated": "2026-03-07",
+    "source": "synthetic_sample",
+    "notes": "Master resume intentionally includes exhaustive content for downstream ranking/selection into tailored resumes."
+  }
+}
