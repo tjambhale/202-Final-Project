@@ -1,0 +1,254 @@
+{
+  "student_key": "u_0001",
+  "resume_id": "0001",
+  "skills": {
+    "programming_languages": ["Python", "SQL", "R", "JavaScript", "TypeScript"],
+    "ml_data": ["pandas", "numpy", "scikit-learn", "statsmodels", "xgboost (basic)", "PyTorch (basic)"],
+    "visualization": ["matplotlib", "plotly", "Tableau", "Power BI"],
+    "data_engineering": ["ETL (Python/SQL)", "Airflow (basic)", "dbt (basic)"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite", "BigQuery (basic)"],
+    "cloud_tools": ["AWS (S3, Lambda) (basic)", "Docker (basic)", "GitHub Actions"],
+    "soft_skills": ["technical writing", "presentation", "stakeholder communication", "team collaboration"]
+  },
+  "education": [
+    {
+      "institution": "University of California, Davis",
+      "degree": "M.S.",
+      "field_of_study": "Data Science",
+      "start_date": "2024-09",
+      "end_date": "2026-06",
+      "status": "in_progress",
+      "cgpa": 3.82,
+      "coursework": [
+        {
+          "code": "DSC 241",
+          "name": "Statistical Models",
+          "topics": [
+            "multiple regression",
+            "diagnostics",
+            "model selection (AIC/CV)",
+            "bootstrap",
+            "generalized linear models",
+            "penalized regression",
+            "nonparametric regression"
+          ]
+        },
+        { "code": "ECS 171", "name": "Machine Learning" },
+        { "code": "STA 207", "name": "Applied Regression" },
+        { "code": "ECS 272", "name": "Information Visualization" }
+      ],
+      "highlights": [
+        "Teaching support role (2025): led lab sections/office hours and helped grade assignments."
+      ]
+    },
+    {
+      "institution": "University of California, San Diego",
+      "degree": "B.S.",
+      "field_of_study": "Cognitive Science (Machine Learning specialization)",
+      "start_date": "2020-09",
+      "end_date": "2024-06",
+      "status": "completed",
+      "cgpa": 3.71,
+      "coursework": [
+        { "code": "CSE 150A", "name": "Intro to AI" },
+        { "code": "CSE 158", "name": "Recommender Systems" },
+        { "code": "COGS 108", "name": "Data Science in Practice" }
+      ],
+      "honors_awards": [
+        { "title": "Dean’s List", "date": "2022-03", "details": "Top 10% of class" }
+      ]
+    }
+  ],
+  "high_school": {
+    "institution": "Canyon Ridge High School",
+    "location": "San Jose, CA",
+    "start_date": "2017-08",
+    "end_date": "2020-06",
+    "focus_note": "Master resume includes all activities; junior/senior years include extra detail.",
+    "activities": [
+      {
+        "title": "Robotics Club (Programming Lead)",
+        "start_date": "2018-09",
+        "end_date": "2020-03",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Led a team of 6 students to build autonomous navigation routines in Java for competitions.",
+          "Implemented PID tuning for line-follow and turn control; reduced navigation error by ~30% during testing.",
+          "Maintained a shared codebase and wrote setup notes to onboard new members more quickly."
+        ]
+      },
+      {
+        "title": "Math Team",
+        "start_date": "2018-09",
+        "end_date": "2020-02",
+        "grade_levels": ["junior", "senior"],
+        "bullets": [
+          "Organized weekly practice problem sets for 15+ members focused on algebra, combinatorics, and probability.",
+          "Participated in regional contests; tracked progress and shared study resources."
+        ]
+      },
+      {
+        "title": "Peer Tutor (STEM)",
+        "start_date": "2019-09",
+        "end_date": "2020-05",
+        "grade_levels": ["senior"],
+        "bullets": [
+          "Tutored peers in precalculus and introductory programming; supported exam prep and projects.",
+          "Created short review sheets and example problems for weekly sessions."
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Nimbus Health Analytics",
+      "role_title": "Data Science Intern",
+      "employment_type": "Internship",
+      "location": "Remote",
+      "start_date": "2025-06",
+      "end_date": "2025-09",
+      "skills_used": ["Python", "SQL", "pandas", "scikit-learn", "Tableau"],
+      "bullets": [
+        "Built a claims-based patient risk model using logistic regression and gradient boosting; improved AUC from 0.71 to 0.79 on validation data.",
+        "Designed a feature pipeline in SQL + Python (120+ features) with automated data quality checks and reproducible notebooks.",
+        "Created a monitoring dashboard for cohort trends; reduced weekly reporting time from ~2 hours to 20 minutes."
+      ]
+    },
+    {
+      "company": "UC Davis Department of Statistics",
+      "role_title": "Graduate Teaching Assistant",
+      "employment_type": "Part-time",
+      "location": "Davis, CA",
+      "start_date": "2025-01",
+      "end_date": "2025-06",
+      "skills_used": ["R", "Python", "technical communication"],
+      "bullets": [
+        "Supported course labs for 60+ students; explained regression, diagnostics, and model selection concepts.",
+        "Authored grading rubrics and reference solutions; improved clarity and reduced regrade requests."
+      ]
+    },
+    {
+      "company": "Campus IT Services (UCSD)",
+      "role_title": "Student Developer",
+      "employment_type": "Part-time",
+      "location": "San Diego, CA",
+      "start_date": "2022-01",
+      "end_date": "2023-06",
+      "skills_used": ["JavaScript", "Python", "PostgreSQL", "Git"],
+      "bullets": [
+        "Built an internal ticket triage tool integrating email + database records; reduced manual tagging workload by ~25%.",
+        "Wrote SQL queries and exports for monthly service metrics used in reporting."
+      ]
+    }
+  ],
+  "research": [
+    {
+      "lab_or_group": "Visual Analytics Lab",
+      "institution": "UC Davis",
+      "role_title": "Graduate Researcher",
+      "start_date": "2024-10",
+      "end_date": "present",
+      "focus_area": "Temporal risk modeling and visualization for healthcare collaboration networks",
+      "tools": ["Python", "PyTorch", "React", "D3.js", "PostgreSQL"],
+      "bullets": [
+        "Developed temporal features for network snapshots and evaluated predictive models across care phases.",
+        "Built interactive visualization prototypes to explore risk trajectories and care team dynamics."
+      ],
+      "artifacts": [
+        { "type": "poster", "title": "Temporal Network Risk Exploration", "date": "2025-05" },
+        { "type": "demo", "title": "Interactive Risk + Team Dynamics Dashboard", "date": "2025-07" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Bike Rental Demand Modeling",
+      "category": "course_project",
+      "start_date": "2026-02",
+      "end_date": "2026-03",
+      "bullets": [
+        "Modeled daily and hourly bike rentals with multiple regression; evaluated interactions (hour × workingday) and model selection via AIC/CV RMSE.",
+        "Compared OLS, penalized regression (ridge/lasso), and nonlinear temperature effects; reported uncertainty using bootstrap confidence intervals."
+      ]
+    },
+    {
+      "project_name": "Resume Tailoring Prototype",
+      "category": "hackathon",
+      "start_date": "2025-11",
+      "end_date": "2025-11",
+      "bullets": [
+        "Built a prototype that ranks resume bullets against a target role using TF-IDF + keyword weighting.",
+        "Implemented grouping by category (skills, projects, experience) and output constraints (e.g., one-page limit)."
+      ]
+    },
+    {
+      "project_name": "Personal Finance Dashboard",
+      "category": "personal_project",
+      "start_date": "2023-08",
+      "end_date": "2023-12",
+      "bullets": [
+        "Ingested transaction data and built automated category rules; created interactive spending trend dashboards.",
+        "Added anomaly flags for unusual charges using simple statistical thresholds."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Women in Data Science Chapter Officer",
+      "organization": "UC Davis",
+      "start_date": "2024-10",
+      "end_date": "2025-06",
+      "bullets": [
+        "Organized speaker events and resume-review workshops; reached 150+ attendees across the year.",
+        "Coordinated mentorship matching for 30 undergraduates."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Hackathon Finalist",
+      "organization": "Data for Good Hackathon",
+      "date": "2025-11",
+      "details": "Top 10 teams out of 80"
+    },
+    {
+      "title": "Undergraduate Research Scholarship",
+      "organization": "UCSD",
+      "date": "2023-04",
+      "details": "$2,000 award"
+    }
+  ],
+  "certifications": [
+    { "title": "AWS Cloud Practitioner", "issuer": "Amazon Web Services", "date": "2025-02" },
+    { "title": "Tableau Desktop Specialist", "issuer": "Tableau", "date": "2024-08" }
+  ],
+  "publications_presentations": [
+    {
+      "type": "poster",
+      "title": "Temporal Provider Network Analytics",
+      "venue": "Campus Research Symposium",
+      "date": "2025-05"
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "Code.org",
+      "role": "Volunteer Tutor",
+      "start_date": "2021-09",
+      "end_date": "2022-05",
+      "bullets": ["Tutored high school students weekly in Python basics and problem-solving."]
+    }
+  ],
+  "activities_interests": {
+    "interests": ["distance running", "cooking", "photography"],
+    "languages": [
+      { "language": "English", "proficiency": "Native" },
+      { "language": "Gujarati", "proficiency": "Conversational" }
+    ]
+  },
+  "metadata": {
+    "last_updated": "2026-03-07",
+    "source": "synthetic_sample",
+    "notes": "Master resume intentionally includes exhaustive content for downstream ranking/selection into tailored resumes."
+  }
+}
