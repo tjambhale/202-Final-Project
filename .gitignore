@@ -22,3 +22,6 @@ jdbc-drivers/
 
 # Misc
 .env
+task3/.venv/
+.venv/
+**/.venv/
