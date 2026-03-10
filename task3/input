@@ -1,0 +1,5 @@
+# input 1 
+runTailor("u_0001", "data analyst internship sql python healthcare")
+
+# input 2 
+runTailor("u_0001", " IT services")
