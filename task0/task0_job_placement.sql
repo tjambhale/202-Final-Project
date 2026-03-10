@@ -195,3 +195,7 @@ SELECT COUNT(*) FROM proj.json_d2_profiles;
 -- For exporting in DataGrip (Export Data -> JSON):
 SELECT profile
 FROM proj.json_d2_profiles;
+
+
+
+

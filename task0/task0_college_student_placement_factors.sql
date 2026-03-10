@@ -164,4 +164,4 @@ FROM proj.json_d1_profiles;
 SELECT COUNT(*) FROM proj.college_student_placement_factors;
 
 -- if we need it to be 1 file
-SELECT profile FROM proj.json_d1_profiles;
+SELECT profile FROM proj.json_d1_profiles LIMIT 2000;
