@@ -61,3 +61,10 @@ ORDER BY profile->>'source', global_key;
 SELECT profile
 FROM proj.master_profiles
 ORDER BY profile->>'source', global_key;
+
+DROP TABLE IF EXISTS final_students;
+
+CREATE TABLE final_students AS
+SELECT
+    jsonb_build_object('profile', profile) AS data
+FROM proj.master_profiles;
