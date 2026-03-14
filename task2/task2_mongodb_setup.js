@@ -1,18 +1,6 @@
 use("proj");
 
-/* =========================================================
-   TASK 2 - MongoDB Setup / Build Script
-   Assumes these collections already exist:
-   - resumes_original
-   - resumes_v1
-   - resumes_v2
-   - resumes_v3
-   - task1_profiles
-   ========================================================= */
-
-/* =========================
-   1. Build resume_versions
-   ========================= */
+/* 1. Build resume_versions */
 
 db.resume_versions.drop();
 
@@ -131,9 +119,7 @@ db.resumes_original.aggregate([
   }
 ]);
 
-/* =========================
-   2. Create indexes
-   ========================= */
+/* 2. Create indexes  */
 
 db.resume_versions.createIndex(
   { student_key: 1, version_order: 1 },
@@ -147,9 +133,7 @@ db.task1_profiles.createIndex(
   { unique: true }
 );
 
-/* =========================
-   3. Helper functions
-   ========================= */
+/*  3. Helper functions */
 
 function safeLen(arr) {
   return Array.isArray(arr) ? arr.length : 0;
@@ -190,10 +174,7 @@ function objNameSet(arr, key) {
   return (arr || []).map(x => x?.[key]).filter(Boolean);
 }
 
-/* =========================
-   4. Scoring functions
-   Mirrors Task 1 logic
-   ========================= */
+/* 4. Scoring functions, mirroring Task 1 logic */
 
 function academicScore(doc) {
   const cgpa = Number(doc?.academics?.cgpa || 0);
@@ -234,9 +215,7 @@ function experienceScore(doc) {
   );
 }
 
-/* =========================
-   5. Add scores to versions
-   ========================= */
+/*  5. Add scores to versions */
 
 db.resume_versions.find().forEach(doc => {
   db.resume_versions.updateOne(
@@ -251,9 +230,7 @@ db.resume_versions.find().forEach(doc => {
   );
 });
 
-/* =========================
-   6. Compare versions
-   ========================= */
+/*  6. Compare versions */
 
 function compareResumeVersions(oldDoc, newDoc) {
   const oldCourses = objNameSet(oldDoc?.academics?.relevant_coursework, "course");
@@ -305,12 +282,7 @@ function getFocusDelta(focusArea, diff) {
   return null;
 }
 
-/* =========================
-   7. Build change logs
-   Includes:
-   - step comparisons
-   - overall original -> v3
-   ========================= */
+/* 7. Build change logs */
 
 db.resume_change_logs.drop();
 
@@ -412,10 +384,7 @@ students.forEach(studentKey => {
   }
 });
 
-/* =========================
-   8. Custom any-two-version comparison
-   Returns object only
-   ========================= */
+/*  8. Custom any-two-version comparison */
 
 function getResumeComparison(studentKey, fromVersion, toVersion) {
   const profile = db.task1_profiles.findOne({ student_key: studentKey });
@@ -467,10 +436,7 @@ function getResumeComparison(studentKey, fromVersion, toVersion) {
   };
 }
 
-/* =========================
-   9. User-facing helper
-   Prints legend only when error occurs
-   ========================= */
+/* 9. User-facing helper */
 
 function showVersionDiff(studentKey, fromVersion, toVersion) {
   const result = getResumeComparison(studentKey, fromVersion, toVersion);
@@ -485,10 +451,6 @@ function showVersionDiff(studentKey, fromVersion, toVersion) {
   printjson(result);
 }
 
-/* =========================
-   10. Optional sanity checks
-   Uncomment if needed
-   ========================= */
 
 // print("task1_profiles count: " + db.task1_profiles.countDocuments());
 // print("resume_versions count: " + db.resume_versions.countDocuments());

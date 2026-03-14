@@ -25,3 +25,5 @@ jdbc-drivers/
 task3/.venv/
 .venv/
 **/.venv/
+.ipynb_checkpoints/
+chroma_db/
