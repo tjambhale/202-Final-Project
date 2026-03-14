@@ -1,14 +1,22 @@
+DROP VIEW IF EXISTS proj.v_54k_master;
+
+DROP TABLE IF EXISTS proj.json_54k_profiles;
+DROP TABLE IF EXISTS proj."54K_01_people";
+DROP TABLE IF EXISTS proj."54K_02_abilities";
+DROP TABLE IF EXISTS proj."54K_03_education";
+DROP TABLE IF EXISTS proj."54K_04_experience";
+DROP TABLE IF EXISTS proj."54K_05_person_skills";
+DROP TABLE IF EXISTS proj."54K_06_skills";
+
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
-DROP TABLE IF EXISTS proj.master_profiles;
-
-CREATE TABLE proj.master_profiles (
-                                      global_key TEXT PRIMARY KEY,
-                                      profile    JSONB NOT NULL
+CREATE TABLE IF NOT EXISTS proj.master_profiles (
+                                                    global_key TEXT PRIMARY KEY,
+                                                    profile    JSONB NOT NULL
 );
 
-TRUNCATE proj.master_profiles;
+TRUNCATE TABLE proj.master_profiles;
 
 -- D1
 INSERT INTO proj.master_profiles(global_key, profile)
@@ -28,7 +36,7 @@ SELECT (profile->>'source') || ':' || (profile->>'student_key') AS global_key,
        profile
 FROM proj.json_d3_profiles;
 
--- D4 (no placed label; still included for later tasks)
+-- D4
 INSERT INTO proj.master_profiles(global_key, profile)
 SELECT (profile->>'source') || ':' || (profile->>'student_key') AS global_key,
        profile
@@ -65,36 +73,24 @@ WHERE profile->'outcome'->>'placed' IS NOT NULL;
 
 CREATE OR REPLACE VIEW proj.v_task0_master_scores AS
 SELECT
-    'D1' AS dataset,
+    CASE
+        WHEN student_key LIKE 'd1_%' THEN 'D1'
+        WHEN student_key LIKE 'd2_%' THEN 'D2'
+        WHEN student_key LIKE 'd3_%' THEN 'D3'
+        WHEN student_key LIKE 'd4_%' THEN 'D4'
+        ELSE 'UNK'
+        END AS dataset,
     student_key AS key,
-    major_group,
-    placed01,
+    major AS major_group,
+    placed AS placed01,
     academic_score,
     skill_score,
     experience_score
-FROM proj.v_task0_d1_scores
-
-UNION ALL
-SELECT
-    'D2',
-    student_key,
-    major_group,
-    placed01,
-    academic_score,
-    skill_score,
-    experience_score
-FROM proj.v_task0_d2_scores
-
-UNION ALL
-SELECT
-    'D3',
-    student_key,
-    major_group_primary AS major_group,   -- use primary group as "major"
-    placed01,
-    academic_score,
-    skill_score,
-    experience_score
-FROM proj.v_task0_d3_scores;
+FROM proj.postgres_public_task0_final_output
+WHERE placed IS NOT NULL
+  AND academic_score IS NOT NULL
+  AND skill_score IS NOT NULL
+  AND experience_score IS NOT NULL;
 
 
 CREATE OR REPLACE VIEW proj.v_task0_master_buckets AS
