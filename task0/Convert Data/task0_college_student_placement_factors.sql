@@ -1,14 +1,12 @@
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
--- giving us the datasets -- like what we have in proj
 SELECT tablename
 FROM pg_tables
 WHERE schemaname='proj'
 ORDER BY tablename;
 
 -- college_student_placement_factors
--- column names and their data types
 SELECT column_name, data_type
 FROM information_schema.columns
 WHERE table_schema='proj'
@@ -160,8 +158,6 @@ SELECT * FROM proj.v_task0_d1_lifts;
 SELECT student_key, profile
 FROM proj.json_d1_profiles;
 
--- how many we have
 SELECT COUNT(*) FROM proj.college_student_placement_factors;
 
--- if we need it to be 1 file
 SELECT profile FROM proj.json_d1_profiles LIMIT 2000;
