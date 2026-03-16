@@ -1,15 +1,3 @@
-
--- student job profile
--- ============================================================
--- TASK 0 (Dataset 4): Student Job Profile (≈707 rows)
--- Table: proj.student_job_profile
--- NOTE: This dataset has NO placement/outcome column.
--- We still build JSON + scores + NTILE buckets, then summarize bucket trends.
--- Primary/Secondary grouping:
---   primary   = "Profile"
---   secondary = "Skill 1"
--- ============================================================
-
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
@@ -26,11 +14,7 @@ WHERE table_schema='proj'
   AND table_name='student_job_profile'
 ORDER BY ordinal_position;
 
--- ------------------------------------------------------------
 -- 1) Create JSON table
--- ------------------------------------------------------------
-
--- drop dependent views first (safe to re-run)
 DROP VIEW IF EXISTS proj.v_task0_d4_bucket_summary;
 DROP VIEW IF EXISTS proj.v_task0_d4_buckets;
 DROP VIEW IF EXISTS proj.v_task0_d4_scores;
@@ -42,12 +26,7 @@ CREATE TABLE proj.json_d4_profiles (
                                        student_key TEXT PRIMARY KEY,
                                        profile     JSONB NOT NULL
 );
-
--- ------------------------------------------------------------
--- 2) Insert rows into JSON (no LIMIT needed for 707 rows)
--- IMPORTANT: columns with spaces MUST be referenced as t."Skill 1", etc.
--- ------------------------------------------------------------
-
+-- 2)
 WITH src AS (
     SELECT
         t."profile"         AS profile_name,
@@ -59,10 +38,10 @@ WITH src AS (
         t."dbms"            AS dbms,
         t."os"              AS os,
         t."cn"              AS cn,
-        t."mathmetics"      AS mathmetics,        -- keep exact header spelling
+        t."mathmetics"      AS mathmetics,    
 
         -- skills
-        t."aptitute"        AS aptitute,          -- keep exact header spelling
+        t."aptitute"        AS aptitute,  
         t."comm"            AS comm,
         t."Problem Solving" AS problem_solving,
         t."creative"        AS creative,
@@ -93,7 +72,7 @@ SELECT
                     'secondary', skill_1
                            ),
 
-        -- no placement label in this dataset
+        -- no placement label in here
             'outcome', jsonb_build_object('placed', NULL),
 
             'academics', jsonb_build_object(
@@ -126,9 +105,7 @@ SELECT student_key, profile
 FROM proj.json_d4_profiles
 LIMIT 2;
 
--- ------------------------------------------------------------
--- 3) Scores view (extract JSON fields + compute 3 scores)
--- ------------------------------------------------------------
+-- 3)
 
 CREATE OR REPLACE VIEW proj.v_task0_d4_scores AS
 SELECT
@@ -136,7 +113,7 @@ SELECT
     profile->'major_group'->>'primary'   AS major_group_primary,
     profile->'major_group'->>'secondary' AS major_group_secondary,
 
-    -- academics (cast to numbers; missing -> 0)
+    -- academics
     COALESCE((profile->'academics'->>'dsa')::double precision, 0)        AS dsa,
     COALESCE((profile->'academics'->>'dbms')::double precision, 0)       AS dbms,
     COALESCE((profile->'academics'->>'os')::double precision, 0)         AS os,
@@ -152,7 +129,7 @@ SELECT
     -- experience
     COALESCE((profile->'experience'->>'hackathons')::double precision, 0)  AS hackathons,
 
-    -- Scores (NTILE will bucket, so exact scaling is fine)
+    -- Scores (NTILE)
     (
         0.30 * COALESCE((profile->'academics'->>'dsa')::double precision, 0) +
         0.20 * COALESCE((profile->'academics'->>'os')::double precision, 0) +
@@ -176,9 +153,7 @@ FROM proj.json_d4_profiles;
 
 SELECT * FROM proj.v_task0_d4_scores LIMIT 5;
 
--- ------------------------------------------------------------
--- 4) Buckets (NTILE 3-way)
--- ------------------------------------------------------------
+-- 4) Buckets
 
 CREATE OR REPLACE VIEW proj.v_task0_d4_buckets AS
 SELECT
@@ -192,9 +167,7 @@ SELECT student_key, major_group_primary, acad_bucket, skill_bucket, exp_bucket
 FROM proj.v_task0_d4_buckets
 LIMIT 10;
 
--- ------------------------------------------------------------
--- 5) No placement label → summary instead of lifts
--- ------------------------------------------------------------
+-- 5) No placement label: summary instead of lifts
 
 CREATE OR REPLACE VIEW proj.v_task0_d4_bucket_summary AS
 SELECT
@@ -209,11 +182,8 @@ ORDER BY n_students DESC;
 
 SELECT * FROM proj.v_task0_d4_bucket_summary;
 
--- ------------------------------------------------------------
 -- 6) Export helpers (DataGrip: run + Export as JSON)
--- ------------------------------------------------------------
 
 SELECT COUNT(*) FROM proj.json_d4_profiles;
 
--- export this result set as JSON (you can LIMIT if you want)
 SELECT profile FROM proj.json_d4_profiles;
