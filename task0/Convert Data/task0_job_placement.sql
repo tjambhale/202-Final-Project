@@ -1,24 +1,13 @@
-
---job placement
--- ============================================================
--- TASK 0 (Dataset 2): Job Placement Dataset
--- Table assumed: proj.job_placement
--- Output JSON table: proj.json_d2_profiles
--- ============================================================
-
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
--- 0) sanity: see columns
 SELECT column_name, data_type
 FROM information_schema.columns
 WHERE table_schema='proj'
   AND table_name='job_placement'
 ORDER BY ordinal_position;
 
--- ============================================================
 -- 1) JSON table
--- ============================================================
 
 DROP TABLE IF EXISTS proj.json_d2_profiles;
 
@@ -57,7 +46,7 @@ SELECT
                     'hsc_subject', hsc_subject
                          ),
 
-        -- skills proxy: employability test score
+        -- skills proxy
             'skills', jsonb_build_object(
                     'emp_test_percentage', emp_test_percentage
                       ),
@@ -80,9 +69,7 @@ SELECT student_key, profile
 FROM proj.json_d2_profiles
 LIMIT 2;
 
--- ============================================================
 -- 2) Scores view (extract JSON fields + compute 3 scores)
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d2_scores AS
 SELECT
@@ -105,8 +92,8 @@ SELECT
         ELSE 0
         END AS workexp01,
 
-    -- -------- scores --------
-    -- Academics: average of percent scores
+    -- scores
+    -- Academics
     (
         0.25 * COALESCE((profile->'academics'->>'ssc_percentage')::double precision, 0)
             + 0.25 * COALESCE((profile->'academics'->>'hsc_percentage')::double precision, 0)
@@ -114,12 +101,12 @@ SELECT
             + 0.25 * COALESCE((profile->'academics'->>'mba_percent')::double precision, 0)
         ) AS academic_score,
 
-    -- Skills: employability test
+    -- Skills
     (
         COALESCE((profile->'skills'->>'emp_test_percentage')::double precision, 0)
         ) AS skill_score,
 
-    -- Experience: work_experience yes/no
+    -- Experience
     (
         CASE
             WHEN lower(COALESCE(profile->'experience'->>'work_experience','')) IN ('yes','y','true','1') THEN 1
@@ -131,9 +118,7 @@ FROM proj.json_d2_profiles;
 
 SELECT * FROM proj.v_task0_d2_scores LIMIT 5;
 
--- ============================================================
 -- 3) Buckets (NTILE)
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d2_buckets AS
 SELECT
@@ -147,9 +132,7 @@ SELECT student_key, major_group, placed01, acad_bucket, skill_bucket, exp_bucket
 FROM proj.v_task0_d2_buckets
 LIMIT 10;
 
--- ============================================================
 -- 4) Lifts per major_group
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d2_lifts AS
 WITH rates AS (
@@ -186,13 +169,10 @@ ORDER BY n_students DESC;
 
 SELECT * FROM proj.v_task0_d2_lifts;
 
--- ============================================================
 -- 5) JSON export helpers
--- ============================================================
 
 SELECT COUNT(*) FROM proj.json_d2_profiles;
 
--- For exporting in DataGrip (Export Data -> JSON):
 SELECT profile
 FROM proj.json_d2_profiles;
 
