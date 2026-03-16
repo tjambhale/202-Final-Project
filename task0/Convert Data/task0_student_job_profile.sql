@@ -1,7 +1,7 @@
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
--- (Optional) confirm tables in proj
+-- confirm tables in proj
 SELECT tablename
 FROM pg_tables
 WHERE schemaname='proj'
