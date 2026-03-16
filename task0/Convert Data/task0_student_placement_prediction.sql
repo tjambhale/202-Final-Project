@@ -1,13 +1,3 @@
-
--- student placement prediction
-
--- ============================================================
--- TASK 0 (Dataset 3): Student Placement Prediction (LIMIT 2000)
--- Primary/Secondary major grouping:
---   primary   = branch
---   secondary = college_tier
--- ============================================================
-
 CREATE SCHEMA IF NOT EXISTS proj;
 SET search_path TO proj;
 
@@ -18,9 +8,7 @@ WHERE table_schema='proj'
   AND table_name='student_placement_prediction'
 ORDER BY ordinal_position;
 
--- ============================================================
 -- 1) Create JSON table (LIMIT 2000 rows)
--- ============================================================
 
 DROP TABLE IF EXISTS proj.json_d3_profiles;
 
@@ -100,9 +88,7 @@ SELECT student_key, profile
 FROM proj.json_d3_profiles
 LIMIT 2;
 
--- ============================================================
 -- 2) Scores view (extract JSON fields + compute 3 scores)
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d3_scores AS
 SELECT
@@ -137,11 +123,9 @@ SELECT
     COALESCE((profile->'experience'->>'leadership_score')::double precision, 0) AS leadership_score,
     COALESCE((profile->'experience'->>'extracurricular_score')::double precision, 0) AS extracurricular_score,
 
-    -- ------------------------------------------------------------
-    -- Scores (no perfect “units” needed because we bucket with NTILE)
-    -- ------------------------------------------------------------
+    -- Scores
 
-    -- academics_score: reward cgpa + attendance + study, penalize backlogs
+    -- academics_score
     (
         0.50 * COALESCE((profile->'academics'->>'cgpa')::double precision, 0)
             + 0.02 * COALESCE((profile->'academics'->>'attendance_percentage')::double precision, 0)
@@ -149,7 +133,7 @@ SELECT
             - 0.60 * COALESCE((profile->'academics'->>'backlogs')::double precision, 0)
         ) AS academic_score,
 
-    -- skill_score: mean of skill-type scores
+    -- skill_score
     (
         0.25 * COALESCE((profile->'skills'->>'coding_skill_score')::double precision, 0)
             + 0.20 * COALESCE((profile->'skills'->>'aptitude_score')::double precision, 0)
@@ -158,7 +142,7 @@ SELECT
             + 0.15 * COALESCE((profile->'skills'->>'mock_interview_score')::double precision, 0)
         ) AS skill_score,
 
-    -- experience_score: “counts + leadership/extracurricular”
+    -- experience_score
     (
         0.40 * COALESCE((profile->'experience'->>'internships_count')::double precision, 0)
             + 0.35 * COALESCE((profile->'experience'->>'projects_count')::double precision, 0)
@@ -174,9 +158,7 @@ FROM proj.json_d3_profiles;
 
 SELECT * FROM proj.v_task0_d3_scores LIMIT 5;
 
--- ============================================================
 -- 3) Buckets (NTILE)
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d3_buckets AS
 SELECT
@@ -190,9 +172,7 @@ SELECT student_key, major_group_primary, placed01, acad_bucket, skill_bucket, ex
 FROM proj.v_task0_d3_buckets
 LIMIT 10;
 
--- ============================================================
 -- 4) Lifts per PRIMARY major group
--- ============================================================
 
 CREATE OR REPLACE VIEW proj.v_task0_d3_lifts AS
 WITH rates AS (
@@ -229,12 +209,8 @@ ORDER BY n_students DESC;
 
 SELECT * FROM proj.v_task0_d3_lifts;
 
--- ============================================================
 -- 5) JSON export helpers
--- ============================================================
 
--- confirm row count in JSON table (should be 2000)
 SELECT COUNT(*) FROM proj.json_d3_profiles;
 
--- to export from DataGrip: run this and export result as JSON
 SELECT profile FROM proj.json_d3_profiles;
